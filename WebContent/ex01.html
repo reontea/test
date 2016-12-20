@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+<script>
+	function winopen(){
+		win = window.open('ex02.html');
+	}
+	function winmsg(msg){
+		win.document.getElementById('msg').innerText = msg;
+	}
+
+
+</script>
+</head>
+<body>
+<input type="text" onkeypress="winmsg(this.value)">
+<input type="button" value="open" onclick="winopen();">
+
+<ul>
+	<li>sugar</li>
+	<li>salt</li>
+	<li>water</li>
+</ul>
+</body>
+<script>
+var lis = document.getElementsByTagName('li');
+
+for (var i = 0; i < lis.length; i++) {
+	alert("asdf");
+	lis[i].style.color='red';
+}
+</script>
+</html>
